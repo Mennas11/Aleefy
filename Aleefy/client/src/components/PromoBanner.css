@@ -1,0 +1,116 @@
+.promo-section {
+  width: min(1250px, 94%);
+  min-height: 230px;
+  margin: 55px auto;
+  padding: 40px 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+  border-radius: 28px;
+  background: #f8c4c7;
+}
+
+.promo-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+}
+
+.promo-label {
+  color: #a34f5a;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.promo-content h2 {
+  max-width: 520px;
+  margin: 8px 0 10px;
+  color: var(--color-dark);
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 3.5vw, 2.7rem);
+  font-weight: 900;
+  line-height: 1.15;
+}
+
+.promo-content p {
+  margin-bottom: 20px;
+  color: #654d49;
+  font-size: 0.95rem;
+}
+
+.promo-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 23px;
+  border-radius: 50px;
+  background: var(--color-dark);
+  color: white;
+  font-size: 0.88rem;
+  font-weight: 700;
+  transition: var(--transition);
+}
+
+.promo-button:hover {
+  background: var(--color-primary-dark);
+  color: white;
+  transform: translateY(-3px);
+}
+
+.promo-button span {
+  font-size: 1.1rem;
+}
+
+.promo-decoration {
+  width: 280px;
+  height: 180px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.promo-paw,
+.promo-heart,
+.promo-bone {
+  position: absolute;
+}
+
+.promo-paw {
+  top: 15px;
+  right: 75px;
+  font-size: 6rem;
+  transform: rotate(15deg);
+}
+
+.promo-heart {
+  top: 0;
+  right: 5px;
+  color: #ed6473;
+  font-size: 6rem;
+  transform: rotate(15deg);
+}
+
+.promo-bone {
+  bottom: 0;
+  left: 30px;
+  font-size: 4rem;
+  transform: rotate(-25deg);
+}
+
+@media (max-width: 600px) {
+  .promo-section {
+    min-height: auto;
+    margin: 35px auto;
+    padding: 32px 25px;
+  }
+
+  .promo-content h2 {
+    font-size: 1.9rem;
+  }
+
+  .promo-decoration {
+    display: none;
+  }
+}
